@@ -148,7 +148,7 @@ function getSize( elem ) {
   var style = getStyle( elem );
 
   // if hidden, everything is 0
-  if ( style.display === 'none' ) {
+  if ( !style.display || style.display === 'none' ) {
     return getZeroSize();
   }
 
