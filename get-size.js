@@ -100,7 +100,7 @@ function setup() {
             '. Are you running this code in a hidden iframe on Firefox? ' +
             'See http://bit.ly/getsizebug1' );
         }
-        return style;
+        return style || {};
       };
   })();
 
